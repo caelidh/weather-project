@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather Project</title>
+    <meta charset="UTF-8" />
+    <link href="src/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/cfccb013a8.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="box">
+      <div class="shadow p-3 mb-5 bg-body rounded box-style">
+        <div class="location-button">
+          <div class="input-group mb-3">
+            <form id="enter-location" id="enter-location">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Enter your location..."
+                autocomplete="off"
+                autofocus="on"
+                id="city-input"
+              />
+              <input id="enter-button" type="submit" value="Enter" />
+              <input
+                id="location-button"
+                type="submit"
+                value="Current Location"
+              />
+            </form>
+          </div>
+        </div>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col">
+              <i class="fa-solid fa-cloud-sun partly-cloudy main-emoji"></i>
+            </div>
+            <div class="col">
+              <div class="weather-details">
+                <span id="date"><h5></h5></span>
+              <div id="current-location"><h3>
+                Eureka</div>
+                  <div id="temperature-number">50</div>
+                  <span class="unit"
+                    ><a href="#" id="fahrenheit-link"> °F </a>
+                    |
+                    <a href="#" id="celsius-link"> °C </a></span
+                  >
+                </h3>
+               <span class="description" id="description">Partly cloudy</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="precip-humid-wind">
+          <div class="container text-center">
+            <div class="row">
+              <div class="col">
+                Precipitation: <span id ="precipitation">1%
+                </span>
+              </div>
+              <div class="col">
+                
+                Humidity: <span id="humidity">71</span>%
+                
+              </div>
+              <div class="col">
+                
+                Wind: <span id="wind">3</span> mph
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="days-temp">
+          <div class="container text-center">
+            <div class="row">
+              <div class="col">
+                <i class="fa-solid fa-cloud-rain emojis"></i>
+                <br />
+                Tuesday<br />
+                <span>50° | 47°</span>
+              </div>
+              <div class="col">
+                <i class="fa-solid fa-cloud-sun-rain emojis"></i><br />
+                Wednesday<br />
+                <span>54° | 43°</span>
+              </div>
+              <div class="col">
+                <i class="fa-solid fa-cloud emojis"></i><br />
+                Thursday<br />
+                <span>55° | 49°</span>
+              </div>
+              <div class="col">
+                <i class="fa-solid fa-cloud-sun emojis"></i><br />
+                Friday<br />
+                <span>59° | 48°</span>
+              </div>
+              <div class="col">
+                <i class="fa-solid fa-sun emojis"></i><br />
+                Saturday<br />
+                <span>60° | 48°</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>

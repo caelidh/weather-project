@@ -39,13 +39,12 @@ console.log(month);
 let hours = now.getHours();
 console.log(hours);
 let minutes = now.getMinutes();
-function addZero(i) {
-  if (i < 10) {
-    i = "0" + i;
-  }
-  return i;
+if (minutes < 10) {
+  minutes = "0" + minutes;
+} else {
+  minutes = minutes + "";
 }
-console.log(addZero);
+
 console.log(minutes);
 
 let h5 = document.querySelector("#date");

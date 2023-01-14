@@ -1,0 +1,64 @@
+body {
+    font-family: "Roboto Condensed", sans-serif;
+    background-image: url("images/pexels-johannes-plenio-1118873 (2).jpg");
+  }
+  
+  .box {
+    margin: 100px;
+  }
+  
+  .box-style {
+    margin: 10px 10px;
+  }
+  #current-location,
+  #temperature-number {
+    font-size: 30px;
+  }
+  #city-input {
+    width: 300px;
+    margin-bottom: 10px;
+    display: inline;
+  }
+  
+  #enter-button,
+  #location-button {
+    background-color: #004cba;
+    color: white;
+    border-radius: 50px;
+    display: inline;
+    line-height: 22px;
+    padding: 10px 20px;
+    border-color: #004cba;
+  }
+  
+  .weather-details {
+    text-align: left;
+  }
+  h5 {
+    color: #484b4f;
+  }
+  .description {
+    display: block;
+    font-size: 18px;
+    text-align: left;
+  }
+  
+  .precip-humid-wind {
+    color: #999896;
+    margin: 30px 60px;
+    font-size: larger;
+  }
+  .main-emoji {
+    font-size: 100px;
+    margin-top: 20px;
+  }
+  .emojis {
+    font-size: 50px;
+    margin-bottom: 10px;
+  }
+  .days-temp {
+    margin: 50px 20px 30px -10px;
+    color: #5a5a5a;
+    right: 100px;
+  }
+  
